@@ -4,24 +4,6 @@ end
 
 getgenv().loaded = true 
 
-local StarterGui = game:GetService("StarterGui")
-
-StarterGui:SetCore("SendNotification", {
-    Title = "script loading..",
-    Text = "wait 8 seconds to load",
-    Duration = 8, -- seconds the notification stays on screen
-    Button1 = "Got it"
-})
-
-
-task.wait(8)
-StarterGui:SetCore("SendNotification", {
-    Title = "❗",
-    Text = "leaked by .gg/sleepyhub if you dont listen to king vyylora you gotta face the consequences",
-    Duration = 8, -- seconds the notification stays on screen
-    Button1 = "Got it"
-})
-
 if LPH_OBFUSCATED == nil then
     local assert = assert
     local type = type
@@ -15983,4 +15965,5 @@ if hookfunction and not Solara and LPH_OBFUSCATED and Game_Name == "South Bronx"
 
         return _FireServer(self, ...)
     end)
+
 end
